@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ars Dev World</title>
+
+  <style>
+
+    body{
+      background-color: black;
+      color: rgb(104, 252, 12);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      height: 100vh;
+      margin: 0;
+
+      text-align: center;
+
+      text-shadow: 0 0 10px rgb(104, 252, 12);
+
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    button{
+      background-color: rgb(104, 252, 12);
+      color: black;
+
+      border: none;
+      padding: 12px 25px;
+
+      border-radius: 10px;
+
+      cursor: pointer;
+
+      transition: 0.3s;
+
+      margin-top: 20px;
+    }
+
+    button:hover{
+      transform: scale(1.1);
+
+      box-shadow: 0 0 20px rgb(104, 252, 12);
+    }
+
+    img{
+      width: 300px;
+
+      border-radius: 20px;
+
+      margin-top: 20px;
+
+      box-shadow: 0 0 20px rgb(104, 252, 12);
+    }
+
+    .loading-box{
+        width: 300px;
+        height: 20px;
+
+        border: 2px solid rgb(104, 252, 12);
+
+        margin-top: 20px;
+
+        border-radius: 20px;
+
+        overflow: hidden;
+    }
+
+    .loading{
+        width: 0%;
+
+        height: 100%;
+
+        background-color: rgb(111, 255, 0);
+
+        animation: load 10s;
+    }
+
+    @keyframes load{
+
+        0%{
+            width: 0%;
+        }
+
+        50%{
+            width: 70%;
+        }
+
+        100%{
+            width: 100%;
+        }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>WELCOME ARS</h1>
+
+  <p>SYSTEM ONLINE</p>
+
+  <button>Contact</button>
+
+  <img 
+  src="https://wallpapercave.com/wp/wp9429783.jpg" 
+  alt="anime">
+  
+  <div class="loading-box">
+    <div class="loading"></div>
+    </div>
+</body>
+</html>

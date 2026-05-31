@@ -1,5 +1,7 @@
 import cv2
 previous_frame = None
+screenshot_taken = False
+screenshot_count = 0
 camera = cv2.VideoCapture(0)
 face_cascade = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
@@ -13,6 +15,12 @@ while True:
     diff_frame = cv2.absdiff(frame,previous_frame)
     motion_score = diff_frame.sum()
     if motion_score > 3_000_000:
+        if screenshot_taken == False:
+            screenshot_count += 1
+            cv2.imwrite(f"motion_{screenshot_count}.jpg", frame)
+            print("Screenshot Saved")
+            screenshot_taken = True
+
         cv2.putText(
             frame,
             "MOTION: YES",
@@ -22,11 +30,15 @@ while True:
             (0, 0, 255),
             2
         )
-    previous_frame = frame
+
+    if motion_score <= 3_000_000:
+        screenshot_taken = False
+
+    previous_frame = frame.copy()
     edge_frame = cv2.Canny(gray_frame, 200, 300)
     cv2.putText(
         frame,
-        "ARS VISION V1",
+        "ARS VISION V3",
         (20, 50),
         cv2.FONT_HERSHEY_SIMPLEX,
         1,

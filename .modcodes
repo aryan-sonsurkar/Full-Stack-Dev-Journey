@@ -1,0 +1,112 @@
+---
+modcodesVersion: 1
+schemaVersion: 1
+project:
+  name: "Timepass"
+  phase: idea
+  createdAt: 2026-09-11T06:10:35.858Z
+  updatedAt: 2026-09-11T06:14:15.332Z
+  source: codebase
+  github: null
+sections: [object Object]
+---
+
+# Project
+
+
+# Problem
+
+
+# Users
+
+
+# Research
+## Session RMTWK9LB7 (quick, 2026-09-11T06:14:15.331Z)
+Query: What is this project
+
+Research (quick, local): What is this project — concise findings from project context. Provide URLs to enrich with verified sources.
+
+# Existing Solutions
+
+
+# PRD
+# PRD — Timepass
+
+## Problem
+Define the problem from research
+
+## Target Users
+Students, hackers
+
+## User Pain / Jobs to be Done
+From research (R-?): —
+
+
+## Goals
+- Ship MVP
+
+## Non-Goals
+- Out of scope: enterprise SSO
+
+## Features
+- Core workflow (traceable to Research R-?)
+
+## User Stories
+- As a student I can … (see Sources: —)
+
+## Functional Requirements
+- FR-1 … [evidence: pending research]
+
+## Non-Functional Requirements
+- Local-first, 60fps
+
+## UX Requirements
+- Keyboard-friendly, accessible
+
+## Technical Constraints
+- File System Access API, local AI only
+
+## Risks
+—
+
+## Success Metrics
+- Tasks completed
+
+## Open Questions
+- … (requires decision)
+
+## Milestones
+M1 Setup → M2 Auth → M3 Core → M4 Testing → M5 Release
+
+---
+*Generated from Research R-? — editable. AI proposals are not authority; user remains authority.*
+
+# Architecture
+
+
+# Decisions
+
+
+# Roadmap
+
+
+# Milestones
+
+
+# Progress
+
+
+# Open Questions
+
+
+# Sources
+• [ai-generated] Local project context — Research (quick, local): What is this project — concise findings from project context. Provide URLs to enrich with verified sources. (2026-09-11T06:14:15.331Z)
+
+# Agent History
+
+
+# Project Context
+
+
+# Research History
+- 2026-09-11T06:14:15.331Z RMTWK9LB7 quick query="What is this project" sources=1 retrieved=0

@@ -1,4 +1,4 @@
-name = input("Player Name:  ")
+name = ("Player Name:  ")
 attack = int(input("Attack :"))
 defense = int(input("Defense :"))
 hp = int(input("HP :"))
